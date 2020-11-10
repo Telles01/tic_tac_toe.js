@@ -3,9 +3,9 @@ const tic_tac_toe = {
   simbols: ['x','0'],
     options: ['x', '0'],
     turn_index: 0,
-  container_element: null,
-  gameover: false;
-
+    charge: function(){ 
+      this.turn_index = this.turn_index === 0 ? 1 : 0);
+  }
 
   init: function(container){
     this.container_element = container;
